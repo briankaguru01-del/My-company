@@ -5,6 +5,7 @@ import FinalCta from "@/components/FinalCta";
 import CtaButton from "@/components/CtaButton";
 import CheckList from "@/components/CheckList";
 import Eyebrow from "@/components/Eyebrow";
+import Accent from "@/components/Accent";
 
 export const metadata: Metadata = {
   title: "The AI Diagnostic",
@@ -42,7 +43,12 @@ export default function AiDiagnosticPage() {
     <>
       <PageHero
         eyebrow="The AI Diagnostic"
-        title="Don't start by building AI. Start by understanding the business."
+        title={
+          <>
+            Don&rsquo;t start by building AI. Start by{" "}
+            <Accent>understanding the business.</Accent>
+          </>
+        }
         description="Before we recommend any technology, we examine how your organisation actually operates. That's what separates a credible AI roadmap from a speculative one."
       >
         <div className="mt-9">
@@ -52,7 +58,12 @@ export default function AiDiagnosticPage() {
 
       <Section
         eyebrow="What We Examine"
-        title="A structured view of the entire business, not just its technology."
+        title={
+          <>
+            A structured view of the entire business,{" "}
+            <Accent>not just its technology.</Accent>
+          </>
+        }
         description="The diagnostic looks across ten dimensions of how your organisation runs today, so recommendations are grounded in how work actually happens — not assumptions about it."
       >
         <div className="mt-10 rounded-lg bg-ink-50 p-8 lg:p-10">
@@ -68,7 +79,8 @@ export default function AiDiagnosticPage() {
           <div className="max-w-2xl">
             <Eyebrow>What You Receive</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight tracking-tight text-ink-950 sm:text-4xl">
-              A clear answer to the question: what should we build?
+              A clear answer to the question:{" "}
+              <Accent>what should we build?</Accent>
             </h2>
           </div>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -85,7 +97,12 @@ export default function AiDiagnosticPage() {
       </section>
 
       <FinalCta
-        title="See exactly where AI can create value in your organisation."
+        title={
+          <>
+            See exactly where AI can{" "}
+            <Accent tone="dark">create value</Accent> in your organisation.
+          </>
+        }
         description="The diagnostic starts with a short intake form, followed by a structured review of your business."
         location="ai_diagnostic_final"
       />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import FinalCta from "@/components/FinalCta";
+import Accent from "@/components/Accent";
 
 export const metadata: Metadata = {
   title: "About",
@@ -14,13 +15,23 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title="An AI transformation and diagnostic partner — not an AI agency."
+        title={
+          <>
+            An AI transformation and diagnostic partner —{" "}
+            <Accent>not an AI agency.</Accent>
+          </>
+        }
         description="We don't sell chatbots, automations, or off-the-shelf AI tools. We help organisations decide, with evidence, what to build and in what order."
       />
 
       <Section
         eyebrow="Why This Approach"
-        title="AI should solve a business problem — not create another one."
+        title={
+          <>
+            AI should solve a business problem —{" "}
+            <Accent>not create another one.</Accent>
+          </>
+        }
       >
         <div className="mt-8 max-w-2xl space-y-5 text-base leading-relaxed text-ink-700">
           <p>
@@ -70,7 +81,12 @@ export default function AboutPage() {
       </section>
 
       <FinalCta
-        title="Find out where AI can create the most value in your organisation."
+        title={
+          <>
+            Find out where AI can create{" "}
+            <Accent tone="dark">the most value</Accent> in your organisation.
+          </>
+        }
         location="about_final"
       />
     </>

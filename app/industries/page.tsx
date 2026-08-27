@@ -3,6 +3,8 @@ import PageHero from "@/components/PageHero";
 import Section from "@/components/Section";
 import FinalCta from "@/components/FinalCta";
 import CheckList from "@/components/CheckList";
+import Eyebrow from "@/components/Eyebrow";
+import Accent from "@/components/Accent";
 
 export const metadata: Metadata = {
   title: "Industries",
@@ -39,13 +41,23 @@ export default function IndustriesPage() {
     <>
       <PageHero
         eyebrow="Who It's For"
-        title="Built for organisations ready to move past AI hype."
+        title={
+          <>
+            Built for organisations ready to{" "}
+            <Accent>move past AI hype.</Accent>
+          </>
+        }
         description="The diagnostic is designed for leadership teams that know AI matters but need a structured, evidence-based way to decide what to actually do about it."
       />
 
       <Section
         eyebrow="Is This For You?"
-        title="The diagnostic is a strong fit if your organisation:"
+        title={
+          <>
+            The diagnostic is a <Accent>strong fit</Accent> if your
+            organisation:
+          </>
+        }
       >
         <div className="mt-10 max-w-3xl">
           <CheckList items={whoItsFor} />
@@ -55,11 +67,10 @@ export default function IndustriesPage() {
       <section className="border-y border-ink-100 bg-ink-50">
         <div className="mx-auto max-w-content px-6 py-16 lg:px-8 lg:py-24">
           <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-signal-600">
-              Industries
-            </p>
+            <Eyebrow>Industries</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight tracking-tight text-ink-950 sm:text-4xl">
-              We work with organisations across a range of industries.
+              We work with organisations across a{" "}
+              <Accent>range of industries.</Accent>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ink-600">
               Every diagnostic is grounded in your organisation&rsquo;s own
@@ -80,7 +91,12 @@ export default function IndustriesPage() {
       </section>
 
       <FinalCta
-        title="Find out where AI can create the most value in your organisation."
+        title={
+          <>
+            Find out where AI can create{" "}
+            <Accent tone="dark">the most value</Accent> in your organisation.
+          </>
+        }
         location="industries_final"
       />
     </>

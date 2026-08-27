@@ -30,7 +30,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 className={`text-sm font-medium transition-colors ${
-                  active ? "text-ink-950" : "text-ink-500 hover:text-ink-950"
+                  active ? "text-ink-950" : "text-ink-500 hover:text-signal-500"
                 }`}
                 aria-current={active ? "page" : undefined}
               >

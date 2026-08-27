@@ -2,7 +2,7 @@ import Eyebrow from "@/components/Eyebrow";
 
 type SectionProps = {
   eyebrow?: string;
-  title?: string;
+  title?: React.ReactNode;
   description?: string;
   tone?: "light" | "dark";
   className?: string;

@@ -2,7 +2,7 @@ import Eyebrow from "@/components/Eyebrow";
 
 type PageHeroProps = {
   eyebrow?: string;
-  title: string;
+  title: React.ReactNode;
   description?: string;
   children?: React.ReactNode;
 };

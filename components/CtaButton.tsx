@@ -12,7 +12,7 @@ type CtaButtonProps = {
 
 export default function CtaButton({
   location,
-  variant = "primary",
+  variant = "highlight",
   className = "",
 }: CtaButtonProps) {
   const base =

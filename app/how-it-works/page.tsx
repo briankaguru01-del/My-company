@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import FinalCta from "@/components/FinalCta";
+import Accent from "@/components/Accent";
 
 export const metadata: Metadata = {
   title: "How It Works",
@@ -45,7 +46,12 @@ export default function HowItWorksPage() {
     <>
       <PageHero
         eyebrow="How It Works"
-        title="A structured process, from first conversation to implementation roadmap."
+        title={
+          <>
+            A structured process, from first conversation to{" "}
+            <Accent>implementation roadmap.</Accent>
+          </>
+        }
         description="Every diagnostic follows the same disciplined sequence — so findings are grounded in evidence, and recommendations are ranked by the value they actually create."
       />
 
@@ -75,7 +81,12 @@ export default function HowItWorksPage() {
       </section>
 
       <FinalCta
-        title="Ready to see where your organisation stands?"
+        title={
+          <>
+            Ready to see where{" "}
+            <Accent tone="dark">your organisation stands?</Accent>
+          </>
+        }
         description="Start with a short intake form. We'll take it from there."
         location="how_it_works_final"
       />

@@ -5,6 +5,7 @@ import Section from "@/components/Section";
 import FinalCta from "@/components/FinalCta";
 import CheckList from "@/components/CheckList";
 import Eyebrow from "@/components/Eyebrow";
+import Accent from "@/components/Accent";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -42,7 +43,8 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <Eyebrow>AI Opportunity Diagnostic</Eyebrow>
             <h1 className="mt-5 font-serif text-4xl font-semibold leading-[1.08] tracking-tight text-ink-950 sm:text-5xl lg:text-6xl">
-              Find out what AI your organisation should actually build.
+              Find out what AI your organisation should{" "}
+              <Accent>actually build.</Accent>
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-600">
               We analyse how your organisation operates, identify where AI and
@@ -58,7 +60,12 @@ export default function HomePage() {
 
       <Section
         eyebrow="The Problem"
-        title="Most organisations know AI can create value. Few know where to start."
+        title={
+          <>
+            Most organisations know AI can create value.{" "}
+            <Accent>Few know where to start.</Accent>
+          </>
+        }
         description="Leadership teams don't lack ambition — they lack a clear, evidence-based answer to a small set of questions that determine whether an AI investment succeeds or stalls."
       >
         <div className="mt-10">
@@ -72,8 +79,8 @@ export default function HomePage() {
             <div>
               <Eyebrow>The Diagnostic</Eyebrow>
               <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight tracking-tight text-ink-950 sm:text-4xl">
-                Don&rsquo;t start by building AI. Start by understanding the
-                business.
+                Don&rsquo;t start by building AI. Start by{" "}
+                <Accent>understanding the business.</Accent>
               </h2>
               <p className="mt-5 text-base leading-relaxed text-ink-600">
                 Before any technology decision, we examine how your
@@ -112,7 +119,12 @@ export default function HomePage() {
       </section>
 
       <FinalCta
-        title="Find out where AI can create the most value in your organisation."
+        title={
+          <>
+            Find out where AI can create <Accent tone="dark">the most value</Accent>{" "}
+            in your organisation.
+          </>
+        }
         description="A structured diagnostic — not a sales pitch — that tells you what to build, in what order, and why."
         location="home_final"
       />

@@ -1,7 +1,7 @@
 import CtaButton from "@/components/CtaButton";
 
 type FinalCtaProps = {
-  title: string;
+  title: React.ReactNode;
   description?: string;
   location: string;
 };
@@ -19,7 +19,7 @@ export default function FinalCta({ title, description, location }: FinalCtaProps
           </p>
         )}
         <div className="mt-9 flex justify-center">
-          <CtaButton location={location} variant="inverse" />
+          <CtaButton location={location} />
         </div>
       </div>
     </section>
