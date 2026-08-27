@@ -57,7 +57,7 @@ export default function HowItWorksPage() {
                 key={step.number}
                 className="grid gap-4 py-10 sm:grid-cols-[100px_1fr] sm:gap-8 lg:grid-cols-[140px_1fr]"
               >
-                <span className="font-serif text-3xl font-semibold text-ink-300">
+                <span className="font-serif text-3xl font-semibold text-highlight-500">
                   {step.number}
                 </span>
                 <div>

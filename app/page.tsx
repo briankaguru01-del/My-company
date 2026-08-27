@@ -51,7 +51,7 @@ export default function HomePage() {
               prioritised roadmap for what to build first.
             </p>
             <div className="mt-10">
-              <CtaButton location="home_hero" />
+              <CtaButton location="home_hero" variant="highlight" />
             </div>
           </div>
         </div>

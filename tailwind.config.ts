@@ -26,6 +26,10 @@ const config: Config = {
           500: "#1030CC",
           400: "#3d5be0",
         },
+        highlight: {
+          600: "#E09A00",
+          500: "#F5AA00",
+        },
       },
       fontFamily: {
         sans: [

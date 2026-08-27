@@ -6,7 +6,7 @@ import { trackCtaClick } from "@/lib/analytics";
 
 type CtaButtonProps = {
   location: string;
-  variant?: "primary" | "inverse";
+  variant?: "primary" | "inverse" | "highlight";
   className?: string;
 };
 
@@ -21,6 +21,8 @@ export default function CtaButton({
   const styles =
     variant === "primary"
       ? "bg-ink-950 text-white hover:bg-ink-800 focus-visible:outline-ink-950"
+      : variant === "highlight"
+      ? "bg-highlight-500 text-ink-950 hover:bg-highlight-600 focus-visible:outline-highlight-600"
       : "bg-white text-ink-950 hover:bg-ink-100 focus-visible:outline-white";
 
   return (
