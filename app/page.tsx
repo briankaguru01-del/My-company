@@ -4,6 +4,7 @@ import CtaButton from "@/components/CtaButton";
 import Section from "@/components/Section";
 import FinalCta from "@/components/FinalCta";
 import CheckList from "@/components/CheckList";
+import Eyebrow from "@/components/Eyebrow";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -39,9 +40,7 @@ export default function HomePage() {
       <section className="border-b border-ink-100 bg-ink-50">
         <div className="mx-auto max-w-content px-6 py-24 lg:px-8 lg:py-32">
           <div className="max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-signal-600">
-              AI Opportunity Diagnostic
-            </p>
+            <Eyebrow>AI Opportunity Diagnostic</Eyebrow>
             <h1 className="mt-5 font-serif text-4xl font-semibold leading-[1.08] tracking-tight text-ink-950 sm:text-5xl lg:text-6xl">
               Find out what AI your organisation should actually build.
             </h1>
@@ -71,9 +70,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-content px-6 py-16 lg:px-8 lg:py-24">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-signal-600">
-                The Diagnostic
-              </p>
+              <Eyebrow>The Diagnostic</Eyebrow>
               <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight tracking-tight text-ink-950 sm:text-4xl">
                 Don&rsquo;t start by building AI. Start by understanding the
                 business.
@@ -98,7 +95,7 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="rounded-sm border border-ink-200 bg-white p-8">
+            <div className="rounded-lg border-t-4 border-t-signal-500 bg-white p-8 shadow-sm">
               <p className="text-xs font-semibold uppercase tracking-wider text-ink-500">
                 What we examine
               </p>

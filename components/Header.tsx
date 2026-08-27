@@ -46,7 +46,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-sm p-2 text-ink-950 lg:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-ink-950 lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label="Toggle navigation menu"
@@ -80,7 +80,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-sm px-2 py-3 text-base font-medium text-ink-800 hover:bg-ink-50"
+                className="rounded-md px-2 py-3 text-base font-medium text-ink-800 hover:bg-ink-50"
               >
                 {item.label}
               </Link>

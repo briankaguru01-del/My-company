@@ -70,7 +70,7 @@ export default function IndustriesPage() {
             {industries.map((industry) => (
               <div
                 key={industry}
-                className="rounded-sm border border-ink-200 bg-white px-5 py-6 text-center"
+                className="rounded-lg border-t-4 border-t-signal-500 bg-white px-5 py-6 text-center shadow-sm"
               >
                 <p className="text-sm font-medium text-ink-800">{industry}</p>
               </div>

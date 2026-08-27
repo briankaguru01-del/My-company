@@ -1,3 +1,5 @@
+import Eyebrow from "@/components/Eyebrow";
+
 type SectionProps = {
   eyebrow?: string;
   title?: string;
@@ -23,15 +25,7 @@ export default function Section({
       <div className="mx-auto max-w-content px-6 py-16 lg:px-8 lg:py-24">
         {(eyebrow || title || description) && (
           <div className="max-w-2xl">
-            {eyebrow && (
-              <p
-                className={`text-xs font-semibold uppercase tracking-[0.14em] ${
-                  tone === "dark" ? "text-signal-400" : "text-signal-600"
-                }`}
-              >
-                {eyebrow}
-              </p>
-            )}
+            {eyebrow && <Eyebrow tone={tone}>{eyebrow}</Eyebrow>}
             {title && (
               <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
                 {title}

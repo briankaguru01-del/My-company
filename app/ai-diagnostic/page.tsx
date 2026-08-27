@@ -4,6 +4,7 @@ import Section from "@/components/Section";
 import FinalCta from "@/components/FinalCta";
 import CtaButton from "@/components/CtaButton";
 import CheckList from "@/components/CheckList";
+import Eyebrow from "@/components/Eyebrow";
 
 export const metadata: Metadata = {
   title: "The AI Diagnostic",
@@ -54,7 +55,7 @@ export default function AiDiagnosticPage() {
         title="A structured view of the entire business, not just its technology."
         description="The diagnostic looks across ten dimensions of how your organisation runs today, so recommendations are grounded in how work actually happens — not assumptions about it."
       >
-        <div className="mt-10 rounded-sm border border-ink-200 bg-ink-50 p-8 lg:p-10">
+        <div className="mt-10 rounded-lg bg-ink-50 p-8 lg:p-10">
           <CheckList items={examinedAreas} columns={2} />
         </div>
         <p className="mt-10 max-w-2xl text-lg font-medium leading-relaxed text-ink-950">
@@ -65,9 +66,7 @@ export default function AiDiagnosticPage() {
       <section className="border-y border-ink-100 bg-ink-50">
         <div className="mx-auto max-w-content px-6 py-16 lg:px-8 lg:py-24">
           <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-signal-600">
-              What You Receive
-            </p>
+            <Eyebrow>What You Receive</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight tracking-tight text-ink-950 sm:text-4xl">
               A clear answer to the question: what should we build?
             </h2>
@@ -76,7 +75,7 @@ export default function AiDiagnosticPage() {
             {deliverables.map((item) => (
               <div
                 key={item}
-                className="rounded-sm border border-ink-200 bg-white p-6"
+                className="rounded-lg border-t-4 border-t-signal-500 bg-white p-6 shadow-sm"
               >
                 <p className="text-sm font-medium text-ink-950">{item}</p>
               </div>

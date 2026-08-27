@@ -44,7 +44,7 @@ export default function AboutPage() {
       <section className="border-y border-ink-100 bg-ink-50">
         <div className="mx-auto max-w-content px-6 py-16 lg:px-8 lg:py-24">
           <div className="grid gap-10 lg:grid-cols-2">
-            <div className="rounded-sm border border-ink-200 bg-white p-8">
+            <div className="rounded-lg border-t-4 border-t-signal-500 bg-white p-8 shadow-sm">
               <h2 className="font-serif text-xl font-semibold text-ink-950">
                 What we are
               </h2>
@@ -55,7 +55,7 @@ export default function AboutPage() {
                 implementation.
               </p>
             </div>
-            <div className="rounded-sm border border-ink-200 bg-white p-8">
+            <div className="rounded-lg border-t-4 border-t-signal-500 bg-white p-8 shadow-sm">
               <h2 className="font-serif text-xl font-semibold text-ink-950">
                 What we are not
               </h2>
