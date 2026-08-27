@@ -1,10 +1,10 @@
 export const siteConfig = {
-  name: "Meridian AI Advisory",
+  name: "Wilvo AI",
   tagline: "AI Agents & Automation Diagnostic",
   description:
     "We analyse how your organisation actually works, identify where AI and automation can create the greatest measurable value, prioritise the best use cases, and provide a practical roadmap for implementation.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com",
-  contactEmail: "hello@example.com",
+  contactEmail: "hello@wilvoai.com",
 };
 
 export type NavItem = {
