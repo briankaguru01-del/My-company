@@ -7,7 +7,7 @@ import Accent from "@/components/Accent";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "We are an AI transformation and diagnostic partner — not a chatbot agency or generic automation shop. We start with the organisation, not the technology.",
+    "We are an AI transformation and diagnostic partner, not a chatbot agency or generic automation shop. We start with the organisation, not the technology.",
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
         eyebrow="About"
         title={
           <>
-            An AI transformation and diagnostic partner —{" "}
+            An AI transformation and diagnostic partner,{" "}
             <Accent>not an AI agency.</Accent>
           </>
         }
@@ -28,7 +28,7 @@ export default function AboutPage() {
         eyebrow="Why This Approach"
         title={
           <>
-            AI should solve a business problem —{" "}
+            AI should solve a business problem,{" "}
             <Accent>not create another one.</Accent>
           </>
         }
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <p className="text-ink-950 font-medium">We understand the work.</p>
           <p className="text-ink-950 font-medium">We identify the friction.</p>
           <p className="text-ink-950 font-medium">
-            We quantify the opportunity where possible.
+            We quantify the value where possible.
           </p>
           <p className="text-ink-950 font-medium">
             We assess feasibility and risk.
@@ -72,7 +72,7 @@ export default function AboutPage() {
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-ink-600">
                 A generic AI agency, chatbot vendor, or automation shop. We do
-                not begin with a product to sell — we begin by understanding
+                not begin with a product to sell, we begin by understanding
                 whether, and where, AI belongs in your organisation.
               </p>
             </div>

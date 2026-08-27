@@ -16,24 +16,24 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px",
-          backgroundColor: "#0a0e12",
+          backgroundColor: "#080E3A",
           color: "#ffffff",
         }}
       >
         <div style={{ fontSize: 56, fontWeight: 600, display: "flex" }}>
           {siteConfig.name}
         </div>
-        <div style={{ fontSize: 28, color: "#aab2b8", marginTop: 20, display: "flex" }}>
-          AI Opportunity Diagnostic
+        <div style={{ fontSize: 28, color: "#9298C0", marginTop: 20, display: "flex" }}>
+          AI Agents & Automation Diagnostic
         </div>
-        <div style={{ fontSize: 26, color: "#e7eaec", marginTop: 60, display: "flex" }}>
+        <div style={{ fontSize: 26, color: "#DCE0F2", marginTop: 60, display: "flex" }}>
           Find out what AI your organisation should actually build.
         </div>
         <div
           style={{
             width: 64,
             height: 4,
-            backgroundColor: "#3a9280",
+            backgroundColor: "#F5AA00",
             marginTop: 48,
             display: "flex",
           }}

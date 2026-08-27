@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch, or start your AI Opportunity Diagnostic directly.",
+    "Get in touch, or start your AI Agents & Automation Diagnostic directly.",
 };
 
 export default function ContactPage() {

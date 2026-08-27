@@ -6,7 +6,7 @@ import Accent from "@/components/Accent";
 export const metadata: Metadata = {
   title: "How It Works",
   description:
-    "A five-step process: discover, map, identify, prioritise, and prove — ending in a practical implementation roadmap.",
+    "A five-step process: discover, map, identify, prioritise, and prove, ending in a practical implementation roadmap.",
 };
 
 const steps = [
@@ -25,19 +25,19 @@ const steps = [
     number: "03",
     title: "Identify",
     description:
-      "Find repetitive, manual, inefficient and high-value opportunities.",
+      "Find repetitive, manual, inefficient and high-value use cases.",
   },
   {
     number: "04",
     title: "Prioritise",
     description:
-      "Evaluate opportunities based on business value, feasibility, risk and speed to value.",
+      "Evaluate each use case based on business value, feasibility, risk and speed to value.",
   },
   {
     number: "05",
     title: "Prove & Roadmap",
     description:
-      "Recommend the best opportunities to prototype and provide a practical implementation roadmap.",
+      "Recommend the best use cases to prototype and provide a practical implementation roadmap.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function HowItWorksPage() {
             <Accent>implementation roadmap.</Accent>
           </>
         }
-        description="Every diagnostic follows the same disciplined sequence — so findings are grounded in evidence, and recommendations are ranked by the value they actually create."
+        description="Every diagnostic follows the same disciplined sequence, so findings are grounded in evidence, and recommendations are ranked by the value they actually create."
       />
 
       <section className="bg-white">

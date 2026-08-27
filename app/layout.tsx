@@ -22,13 +22,13 @@ const sourceSerif = Source_Serif_4({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — AI Opportunity Diagnostic`,
+    default: `${siteConfig.name} — AI Agents & Automation Diagnostic`,
     template: `%s — ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
     "AI diagnostic",
-    "AI opportunity assessment",
+    "AI agent readiness assessment",
     "AI transformation consulting",
     "AI strategy roadmap",
     "AI readiness assessment",
@@ -39,12 +39,12 @@ export const metadata: Metadata = {
     type: "website",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — AI Opportunity Diagnostic`,
+    title: `${siteConfig.name} — AI Agents & Automation Diagnostic`,
     description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — AI Opportunity Diagnostic`,
+    title: `${siteConfig.name} — AI Agents & Automation Diagnostic`,
     description: siteConfig.description,
   },
   robots: {

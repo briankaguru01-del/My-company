@@ -9,7 +9,7 @@ import Accent from "@/components/Accent";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "AI Opportunity Diagnostic for Growing Organisations",
+  title: "AI Agents & Automation Diagnostic for Growing Organisations",
   description: siteConfig.description,
 };
 
@@ -17,7 +17,7 @@ const problemPoints = [
   "Where AI should actually be applied",
   "What should be automated",
   "What should remain human",
-  "Which opportunities are worth building",
+  "Which use cases are worth building",
   "What should be built first",
   "What will actually produce measurable value",
 ];
@@ -41,15 +41,15 @@ export default function HomePage() {
       <section className="border-b border-ink-100 bg-ink-50">
         <div className="mx-auto max-w-content px-6 py-24 lg:px-8 lg:py-32">
           <div className="max-w-3xl">
-            <Eyebrow>AI Opportunity Diagnostic</Eyebrow>
+            <Eyebrow>AI Agents & Automation Diagnostic</Eyebrow>
             <h1 className="mt-5 font-serif text-4xl font-semibold leading-[1.08] tracking-tight text-ink-950 sm:text-5xl lg:text-6xl">
               Find out what AI your organisation should{" "}
               <Accent>actually build.</Accent>
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-600">
-              We analyse how your organisation operates, identify where AI and
-              automation can create measurable value, and give you a
-              prioritised roadmap for what to build first.
+              We look at how your organisation actually runs, find where AI
+              and automation would genuinely move the needle, and hand you a
+              roadmap ranked by what to build first.
             </p>
             <div className="mt-10">
               <CtaButton location="home_hero" variant="highlight" />
@@ -66,7 +66,7 @@ export default function HomePage() {
             <Accent>Few know where to start.</Accent>
           </>
         }
-        description="Leadership teams don't lack ambition — they lack a clear, evidence-based answer to a small set of questions that determine whether an AI investment succeeds or stalls."
+        description="Leadership teams don't lack ambition. They lack a clear, evidence-based answer to a small set of questions that determine whether an AI investment succeeds or stalls."
       >
         <div className="mt-10">
           <CheckList items={problemPoints} columns={2} />
@@ -84,12 +84,12 @@ export default function HomePage() {
               </h2>
               <p className="mt-5 text-base leading-relaxed text-ink-600">
                 Before any technology decision, we examine how your
-                organisation actually operates — not how it appears in a
+                organisation actually operates, not how it appears in a
                 process diagram. That grounding is what makes an AI roadmap
                 credible instead of speculative.
               </p>
               <p className="mt-5 text-base font-medium leading-relaxed text-ink-950">
-                Our job is to determine where AI belongs — and where it
+                Our job is to determine where AI belongs, and where it
                 doesn&rsquo;t.
               </p>
               <div className="mt-9 flex flex-wrap gap-4">
@@ -125,7 +125,7 @@ export default function HomePage() {
             in your organisation.
           </>
         }
-        description="A structured diagnostic — not a sales pitch — that tells you what to build, in what order, and why."
+        description="A structured diagnostic, not a sales pitch, that tells you what to build, in what order, and why."
         location="home_final"
       />
     </>

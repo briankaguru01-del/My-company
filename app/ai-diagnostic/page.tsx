@@ -8,9 +8,9 @@ import Eyebrow from "@/components/Eyebrow";
 import Accent from "@/components/Accent";
 
 export const metadata: Metadata = {
-  title: "The AI Diagnostic",
+  title: "AI Agents & Automation Diagnostic",
   description:
-    "The AI Opportunity Diagnostic examines your business objectives, people, workflows, technology and data to determine where AI belongs — and where it doesn't.",
+    "The AI Agents & Automation Diagnostic examines your business objectives, people, workflows, technology and data to determine where AI belongs, and where it doesn't.",
 };
 
 const examinedAreas = [
@@ -30,8 +30,7 @@ const deliverables = [
   "AI Maturity Assessment",
   "Current-State Operational Findings",
   "Workflow Analysis",
-  "AI Opportunity Portfolio",
-  "Prioritised AI Opportunities",
+  "Prioritised AI & Automation Use Cases",
   "Recommended Proofs of Concept",
   "Business Value Assessment",
   "90-Day Implementation Roadmap",
@@ -42,7 +41,7 @@ export default function AiDiagnosticPage() {
   return (
     <>
       <PageHero
-        eyebrow="The AI Diagnostic"
+        eyebrow="AI Agents & Automation Diagnostic"
         title={
           <>
             Don&rsquo;t start by building AI. Start by{" "}
@@ -64,13 +63,13 @@ export default function AiDiagnosticPage() {
             <Accent>not just its technology.</Accent>
           </>
         }
-        description="The diagnostic looks across ten dimensions of how your organisation runs today, so recommendations are grounded in how work actually happens — not assumptions about it."
+        description="The diagnostic looks across ten dimensions of how your organisation runs today, so recommendations are grounded in how work actually happens, not assumptions about it."
       >
         <div className="mt-10 rounded-lg bg-ink-50 p-8 lg:p-10">
           <CheckList items={examinedAreas} columns={2} />
         </div>
         <p className="mt-10 max-w-2xl text-lg font-medium leading-relaxed text-ink-950">
-          Our job is to determine where AI belongs — and where it doesn&rsquo;t.
+          Our job is to determine where AI belongs, and where it doesn&rsquo;t.
         </p>
       </Section>
 

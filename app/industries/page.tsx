@@ -9,7 +9,7 @@ import Accent from "@/components/Accent";
 export const metadata: Metadata = {
   title: "Industries",
   description:
-    "The AI Opportunity Diagnostic is built for organisations across professional services, field services, healthcare, financial services, logistics, construction, manufacturing, hospitality and technology.",
+    "The AI Agents & Automation Diagnostic is built for organisations across professional services, field services, healthcare, financial services, logistics, construction, manufacturing, hospitality and technology.",
 };
 
 const whoItsFor = [
@@ -74,7 +74,7 @@ export default function IndustriesPage() {
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ink-600">
               Every diagnostic is grounded in your organisation&rsquo;s own
-              operations, roles and data — not assumed industry templates.
+              operations, roles and data, not assumed industry templates.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
