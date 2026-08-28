@@ -27,7 +27,7 @@ export default function OpengraphImage() {
           AI Agents & Automation Diagnostic
         </div>
         <div style={{ fontSize: 26, color: "#DCE0F2", marginTop: 60, display: "flex" }}>
-          Find out what AI your organisation should actually build.
+          Pinpoint where AI belongs in your organisation. Then build.
         </div>
         <div
           style={{

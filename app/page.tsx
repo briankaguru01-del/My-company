@@ -43,8 +43,8 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <Eyebrow>AI Agents & Automation Diagnostic</Eyebrow>
             <h1 className="mt-5 font-serif text-4xl font-semibold leading-[1.08] tracking-tight text-ink-950 sm:text-5xl lg:text-6xl">
-              Find out what AI your organisation should{" "}
-              <Accent>actually build.</Accent>
+              Pinpoint where AI belongs in your organisation.{" "}
+              <Accent>Then build.</Accent>
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-600">
               We look at how your organisation actually runs, find where AI
