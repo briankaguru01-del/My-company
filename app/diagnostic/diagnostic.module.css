@@ -502,3 +502,56 @@ textarea.input {
     animation: none;
   }
 }
+
+/* Wilvo success mark: navy tile with an amber tick */
+.doneMark {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.doneRing {
+  fill: #0a1a6e;
+  rx: 14px;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: wilvoPop 0.6s cubic-bezier(0.22, 0.8, 0.24, 1) both;
+}
+
+.doneTick {
+  fill: none;
+  stroke: #f5aa00;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: wilvoDraw 0.5s cubic-bezier(0.22, 0.8, 0.24, 1) 0.35s forwards;
+}
+
+@keyframes wilvoPop {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes wilvoDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .doneRing,
+  .doneTick {
+    animation: none;
+  }
+
+  .doneTick {
+    stroke-dashoffset: 0;
+  }
+}
