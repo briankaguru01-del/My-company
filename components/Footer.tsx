@@ -55,7 +55,12 @@ export default function Footer() {
           <p>
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
-          <p>Registered address available on request.</p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy" className="hover:text-white">
+              Privacy Policy
+            </Link>
+            <span>Registered address available on request.</span>
+          </div>
         </div>
       </div>
     </footer>
