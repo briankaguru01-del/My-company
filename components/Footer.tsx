@@ -17,11 +17,17 @@ export default function Footer() {
           <p>
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
-          <a href={`mailto:${siteConfig.contactEmail}`}
-            className="hover:text-white"
-          >
-            {siteConfig.contactEmail}
-          </a>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy-policy" className="hover:text-white">
+              Privacy Policy
+            </Link>
+            <a
+              href={`mailto:${siteConfig.contactEmail}`}
+              className="hover:text-white"
+            >
+              {siteConfig.contactEmail}
+            </a>
+          </div>
         </div>
       </footer>
     );
@@ -78,7 +84,12 @@ export default function Footer() {
           <p>
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
-          <p>Registered address available on request.</p>
+          <div className="flex items-center gap-4">
+            <Link href="/privacy-policy" className="hover:text-white">
+              Privacy Policy
+            </Link>
+            <span>Registered address available on request.</span>
+          </div>
         </div>
       </div>
     </footer>

@@ -17,6 +17,7 @@ export const navItems: NavItem[] = [
   { label: "AI Diagnostic", href: "/ai-diagnostic" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Industries", href: "/industries" },
+  { label: "Our Work", href: "/work" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
