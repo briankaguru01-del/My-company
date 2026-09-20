@@ -1,8 +1,31 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { navItems, siteConfig } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const pathname = usePathname();
+
+  // On the diagnostic form page the footer is a slim single row, without the
+  // registered-address line. Every other page keeps the full footer below.
+  if (pathname.startsWith("/diagnostic")) {
+    return (
+      <footer className="border-t border-white/10 bg-ink-950 text-ink-300">
+        <div className="mx-auto flex max-w-content flex-col gap-2 px-6 py-5 text-sm sm:flex-row sm:items-center sm:justify-between lg:px-8">
+          <p>
+            &copy; {year} {siteConfig.name}. All rights reserved.
+          </p>
+          <a href={`mailto:${siteConfig.contactEmail}`}
+            className="hover:text-white"
+          >
+            {siteConfig.contactEmail}
+          </a>
+        </div>
+      </footer>
+    );
+  }
 
   return (
     <footer className="border-t border-ink-100 bg-ink-950 text-ink-200">
