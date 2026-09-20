@@ -10,6 +10,10 @@ export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  // On the diagnostic form page the header button is hidden: you are already
+  // on the form, and the form's own button should be the one bright action.
+  const onForm = pathname.startsWith("/diagnostic");
+
   return (
     <header className="sticky top-0 z-50 border-b border-ink-100 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-content items-center justify-between px-6 py-4 lg:px-8">
@@ -41,7 +45,11 @@ export default function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <CtaButton location="header" />
+          {onForm ? (
+            <span className="block w-[228px]" aria-hidden="true" />
+          ) : (
+            <CtaButton location="header" />
+          )}
         </div>
 
         <button
@@ -85,9 +93,11 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <div className="mt-3">
-              <CtaButton location="mobile_header" className="w-full" />
-            </div>
+            {!onForm && (
+              <div className="mt-3">
+                <CtaButton location="mobile_header" className="w-full" />
+              </div>
+            )}
           </nav>
         </div>
       )}
