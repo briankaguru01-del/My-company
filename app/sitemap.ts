@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/about",
     "/contact",
     "/diagnostic",
-    "/privacy",
+    "/privacy-policy",
   ];
 
   return routes.map((route) => ({
@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ? 1
         : route === "/diagnostic"
           ? 0.9
-          : route === "/privacy"
+          : route === "/privacy-policy"
             ? 0.3
             : 0.7,
   }));

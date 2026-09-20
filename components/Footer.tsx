@@ -18,7 +18,7 @@ export default function Footer() {
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy" className="hover:text-white">
+            <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy
             </Link>
             <a
@@ -85,7 +85,7 @@ export default function Footer() {
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy" className="hover:text-white">
+            <Link href="/privacy-policy" className="hover:text-white">
               Privacy Policy
             </Link>
             <span>Registered address available on request.</span>
