@@ -6,6 +6,7 @@ import FinalCta from "@/components/FinalCta";
 import CheckList from "@/components/CheckList";
 import Eyebrow from "@/components/Eyebrow";
 import Accent from "@/components/Accent";
+import EvidenceGrid from "@/components/EvidenceGrid";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -48,8 +49,9 @@ export default function HomePage() {
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-600">
               We look at how your organisation actually runs, find where AI
-              and automation would genuinely move the needle, and hand you a
-              roadmap ranked by what to build first.
+              and automation would genuinely move the needle, and give you a
+              roadmap ranked by what to build first. Then we build it with
+              you.
             </p>
             <div className="mt-10">
               <CtaButton location="home_hero" variant="highlight" />
@@ -75,6 +77,37 @@ export default function HomePage() {
 
       <section className="border-y border-ink-100 bg-ink-50">
         <div className="mx-auto max-w-content px-6 py-16 lg:px-8 lg:py-24">
+          <div className="max-w-2xl">
+            <Eyebrow>The Evidence</Eyebrow>
+            <h2 className="mt-4 font-serif text-3xl font-semibold leading-tight tracking-tight text-ink-950 sm:text-4xl">
+              Most AI projects don&rsquo;t fail on the technology.{" "}
+              <Accent>They fail on the question.</Accent>
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-ink-600">
+              The research points consistently at the same failure mode:
+              organisations select a solution before anyone has established
+              which problem is worth solving.
+            </p>
+          </div>
+          <div className="mt-10">
+            <EvidenceGrid />
+          </div>
+          <blockquote className="mt-12 max-w-3xl border-l-4 border-signal-500 pl-6">
+            <p className="font-serif text-xl leading-relaxed text-ink-950 sm:text-2xl">
+              Imagine going to a doctor who asks you nothing, hands you
+              medicine, and puts a cast on your leg. You haven&rsquo;t said a
+              word about what hurts.
+            </p>
+            <p className="mt-4 text-sm text-ink-500">
+              That is what buying AI without a diagnosis looks like. We
+              diagnose before we prescribe.
+            </p>
+          </blockquote>
+        </div>
+      </section>
+
+      <section className="bg-white">
+        <div className="mx-auto max-w-content px-6 py-16 lg:px-8 lg:py-24">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <Eyebrow>The Diagnostic</Eyebrow>
@@ -92,6 +125,11 @@ export default function HomePage() {
                 Our job is to determine where AI belongs, and where it
                 doesn&rsquo;t.
               </p>
+              <p className="mt-5 text-base leading-relaxed text-ink-600">
+                From there we build the priority use cases with you, and stay
+                on through adoption, because a system nobody uses returns
+                nothing.
+              </p>
               <div className="mt-9 flex flex-wrap gap-4">
                 <CtaButton location="home_diagnostic_section" />
                 <Link
@@ -102,7 +140,7 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="rounded-lg border-t-4 border-t-signal-500 bg-white p-8 shadow-sm">
+            <div className="rounded-lg border-t-4 border-t-signal-500 bg-ink-50 p-8 shadow-sm">
               <p className="text-xs font-semibold uppercase tracking-wider text-ink-500">
                 What we examine
               </p>
