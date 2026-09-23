@@ -159,8 +159,9 @@ export default function HomePage() {
       <FinalCta
         title={
           <>
-            Find out where AI can create <Accent tone="dark">the most value</Accent>{" "}
-            in your organisation.
+            Find out what AI is{" "}
+            <Accent tone="dark">actually worth to you</Accent>, before you
+            build anything.
           </>
         }
         description="A structured diagnostic, not a sales pitch, that tells you what to build, in what order, and why."

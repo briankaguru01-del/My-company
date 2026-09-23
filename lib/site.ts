@@ -22,5 +22,5 @@ export const navItems: NavItem[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const CTA_LABEL = "Find Where AI Can Help";
+export const CTA_LABEL = "Get My AI Roadmap";
 export const CTA_HREF = "/diagnostic";
