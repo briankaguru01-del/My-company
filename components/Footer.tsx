@@ -84,12 +84,9 @@ export default function Footer() {
           <p>
             &copy; {year} {siteConfig.name}. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" className="hover:text-white">
-              Privacy Policy
-            </Link>
-            <span>Registered address available on request.</span>
-          </div>
+          <Link href="/privacy-policy" className="hover:text-white">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>
