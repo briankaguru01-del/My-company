@@ -41,8 +41,8 @@ export default function AboutPage() {
         eyebrow="About"
         title={
           <>
-            An AI transformation and diagnostic partner,{" "}
-            <Accent>not an AI agency.</Accent>
+            An AI transformation and{" "}
+            <Accent>diagnostic partner.</Accent>
           </>
         }
         description="We don't sell chatbots, automations, or off-the-shelf AI tools. We help organisations decide, with evidence, what to build and in what order."
