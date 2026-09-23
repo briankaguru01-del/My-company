@@ -4,7 +4,7 @@ export const siteConfig = {
   description:
     "We analyse how your organisation actually works, identify where AI and automation can create the greatest measurable value, prioritise the best use cases, and provide a practical roadmap for implementation.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com",
-  contactEmail: "diagnostics@wilvoai.net",
+  contactEmail: "brian.kaguru@wilvoai.net",
 };
 
 export type NavItem = {
@@ -22,5 +22,5 @@ export const navItems: NavItem[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-export const CTA_LABEL = "Find Where AI Can Help";
+export const CTA_LABEL = "Get My AI Roadmap";
 export const CTA_HREF = "/diagnostic";

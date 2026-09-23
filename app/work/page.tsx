@@ -37,8 +37,9 @@ export default function WorkPage() {
       <FinalCta
         title={
           <>
-            Find out where AI can create{" "}
-            <Accent tone="dark">the most value</Accent> in your organisation.
+            Find out what AI is{" "}
+            <Accent tone="dark">actually worth to you</Accent>, before you
+            build anything.
           </>
         }
         location="work_final"
